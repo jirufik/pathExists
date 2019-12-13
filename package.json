@@ -1,0 +1,41 @@
+{
+  "name": "jrf-path-exists",
+  "version": "1.0.0",
+  "description": "Does the object have a path",
+  "main": "pathExists.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "verbose": true,
+    "collectCoverage": true
+  },
+  "keywords": [
+    "object",
+    "path",
+    "pathExists",
+    "jrf"
+  ],
+  "author": {
+    "name": "jirufik",
+    "url": "https://github.com/jirufik"
+  },
+  "maintainers": [
+    {
+      "name": "jirufik",
+      "url": "https://github.com/jirufik"
+    }
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=8"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^24.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jirufik/jrfpathexists"
+  }
+}
