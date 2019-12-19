@@ -1,6 +1,6 @@
 {
   "name": "jrf-path-exists",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Does the object have a path",
   "main": "pathExists.js",
   "scripts": {
