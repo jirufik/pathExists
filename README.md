@@ -17,6 +17,14 @@ pathExists(obj, path, defaultValue);
 ```
 
 ```js
+const user = response && response.data && response.data.nodes && response.data.nodes[0] && response.data.nodes[0].builds && response.data.nodes[0].builds[0] && response.data.nodes[0].builds[0].user;
+const user = pathExists(response, 'response.data.nodes[0].builds[0].user');
+
+const user = (response && response.data && response.data.nodes && response.data.nodes[0] && response.data.nodes[0].builds && response.data.nodes[0].builds[0] && response.data.nodes[0].builds[0].user) || {username: ''};
+const user = pathExists(response, 'response.data.nodes[0].builds[0].user', {username: ''});
+```
+
+```js
 const pathExists = require('jrf-path-exists');
 
 const obj = {

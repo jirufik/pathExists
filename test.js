@@ -126,18 +126,3 @@ test(`default: {}`, () => {
   expect(res).toMatchObject({});
 
 });
-
-console.log(pathExists(obj, 'a.b.c'));
-console.log(pathExists(obj, `a[${b}].c`));
-console.log(pathExists(obj, 'a.b.c.d.s'));
-console.log(pathExists(obj, 'd.arr[2].b[1]'));
-console.log(pathExists(obj, 'd.arr[3].3.2'));
-console.log(pathExists(obj, 'd.arr[3][3][2]'));
-console.log(pathExists(obj, 'e[1]'));
-console.log(pathExists(obj, 'e[4]'));
-console.log(pathExists(obj, 'e[4]', null));
-console.log(pathExists(obj, 'e[4]', false));
-console.log(pathExists(obj, 'e[4]', 0));
-console.log(pathExists(obj, 'e[4]', []));
-console.log(pathExists(obj, 'e[4]', ''));
-console.log(pathExists(obj, 'e[4]', {}));
