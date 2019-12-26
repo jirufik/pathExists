@@ -8,7 +8,7 @@ module.exports = function pathExists(obj, path, defaultValue) {
 
   const returnValue = (value) => {
     if (typeof defaultValue === 'undefined') return value;
-    return typeof value === 'undefined' ? defaultValue : value;
+    return (typeof value === 'undefined' || value === null) ? defaultValue : value;
   };
 
   const replaceArray = (arr) => {

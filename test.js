@@ -17,7 +17,8 @@ const obj = {
       ['q', 'w', 'r', ['h', 'l', 'o']]
     ]
   },
-  e: ['one el', 'two el']
+  e: ['one el', 'two el'],
+  f: null
 };
 
 const b = 'b';
@@ -124,5 +125,19 @@ test(`default: {}`, () => {
 
   const res = pathExists(obj, `e[4]`, {});
   expect(res).toMatchObject({});
+
+});
+
+test(`value is null`, () => {
+
+  const res = pathExists(obj, `f`);
+  expect(res).toBeNull();
+
+});
+
+test(`default: 7`, () => {
+
+  const res = pathExists(obj, `f`, 7);
+  expect(res).toEqual(7);
 
 });
